@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Require + Angular Test</title>
+	<link rel="stylesheet" type="text/css" href="js/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="js/lib/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/angular-material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand">AngularUI Router</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	        <li><a ui-sref="home">Home</a></li>
+	        <li><a ui-sref="about">About</a></li>
+	    </ul>
+	</nav>
+
+	<div class="container">
+    	<div ui-view></div>
+
+	</div>
+	<script type="text/javascript" src="js/lib/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" data-main="js/config/requireConfig" src="js/lib/require.js"></script>
+</body>
+</html>

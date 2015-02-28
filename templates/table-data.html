@@ -1,0 +1,22 @@
+<div>
+	<md-button class="md-primary" ng-click="showAdvanced($event)">Alert Dialog</md-button>
+</div>
+
+{{alert}}
+
+<h3>Fine Scotches</h3>
+
+<table class="table">
+	<thead>
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Price</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="scotch in scotches">
+			<td>{{scotch.name}}</td>
+			<td>{{scotch.price}}</td>
+		</tr>
+	</tbody>
+</table>
