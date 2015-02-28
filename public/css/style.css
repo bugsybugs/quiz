@@ -1,0 +1,11 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.side-bar{
+  background: #f7f7f9;
+}
+
+.no-margin-override{
+  margin:0px !important;
+}
