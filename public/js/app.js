@@ -1,6 +1,7 @@
 define(function(require){
 	var angular = require('angular');
-	var controller = require('./app/controllers/aboutController')
+	var controller = require('./app/controllers/aboutController');
+	var controllers = require('./app/controllers/controllers')
 
 	var app = angular.module('seed',['ui.router','ngMaterial']);
 
@@ -11,7 +12,13 @@ define(function(require){
 		$stateProvider
 		.state('home', {
 			url: "/home",
-			templateUrl: "templates/home.html"
+			views:{
+				'':{templateUrl: "templates/home.html"},
+				'list@home':{
+					templateUrl:'templates/home-list.html',
+					controller: controllers.homeController
+				}
+			}
 		})
 		
 		.state('home.list', {

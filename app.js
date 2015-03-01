@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,7 +10,10 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var db = require('./api/db');
+
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -57,7 +62,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(3000,function(){
-	console.log('## Magic happens on port #3000');
+    console.log('## Magic happens on port #3000');
 })
 
 module.exports = app;
